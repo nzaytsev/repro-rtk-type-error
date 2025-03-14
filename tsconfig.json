@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "noImplicitAny": true,
+    "allowSyntheticDefaultImports": true,
+    "strictNullChecks": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "outDir": "./dist/",
+    "module": "CommonJS",
+    "target": "ES6",
+    "lib": ["DOM", "DOM.Iterable", "ES6"],
+    "baseUrl": ".",
+    "importHelpers": true,
+    "esModuleInterop": true,
+    "noEmit": true,
+    "typeRoots": ["./types", "./node_modules/@types"],
+    "moduleResolution": "node",
+    "moduleSuffixes": [".p2", ".connect", ""],
+    "paths": {
+      "@widgets/*": ["src/widgets/*"],
+      "@features/*": ["src/features/*"],
+      "@shared/*": ["src/shared/*"],
+      "@entities/*": ["src/entities/*"]
+    },
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_module/**/*", "out"]
+}
